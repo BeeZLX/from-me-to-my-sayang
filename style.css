@@ -1,0 +1,303 @@
+
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    background-color: #1a0a14;
+}
+
+.header {
+    background-color: rgb(70, 6, 32);
+    color: white;
+    padding: 18px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.85);
+}
+
+.textounderheader {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.letracursiva {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.tela {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.ContainerTitulo {
+    height: auto;
+    width: min(90vw, 700px);
+    background-color: rgb(70, 6, 32);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    padding: .8rem;
+    font-size: 1.4rem;
+}
+
+.ContainerTexto {
+    width: min(90vw, 700px);
+    max-height: calc(100vh - 220px);
+    background-color: rgb(148, 14, 70);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.55);
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.ContainerImagem {
+    width: min(90vw, 500px);
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.ContainerImagemTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px;
+}
+
+.ContainerImagem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.ContainerTexto:hover,
+.ContainerTitulo:hover,
+.ContainerImagem:hover {
+    transform: scale(1.02);
+}
+
+.Teexto {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.Teexto h1,
+.Teexto h3 {
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.Teexto h1:hover,
+.Teexto h3:hover {
+    transform: scale(1.05);
+}
+
+.um {
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 100px;
+    color: white;
+    background-color: rgb(56, 4, 21);
+    background-size: cover;
+    background-position: center;
+}
+
+.imagem {
+    background-image: url('sayangblur.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.verde {
+    background-color: #4b0413;
+}
+
+.ContainerTextoGrande {
+    width: min(95vw, 900px);
+    background-color: rgba(70, 6, 32, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 20px rgba(148, 14, 70, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    max-height: calc(100vh - 160px);
+    overflow-y: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.ContainerTextoGrande h2 {
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+}
+
+.ContainerTextoGrande p {
+    text-align: justify;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.photo-container {
+    width: min(85vw, 320px);
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    overflow: hidden;
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dias .ContainerTextoGrande {
+    height: auto;
+    max-height: fit-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.love, .coisas, .music, .momentos, .dias {
+    background-color: #360210;
+}
+
+.final {
+    background-color: rgb(70, 6, 32);
+    font-family: 'Great Vibes', cursive;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        font-size: 1rem;
+        padding: 16px;
+    }
+
+    .tela {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .imagem {
+        gap: 20px;
+    }
+
+    .ContainerTexto {
+        width: min(95vw, 650px);
+    }
+
+    .ContainerTextoGrande {
+        width: min(95vw, 750px);
+    }
+
+    .teextoheader, .textounderheader {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        font-size: 0.95rem;
+        padding: 14px;
+    }
+
+    .tela {
+        min-height: auto;
+        padding: 1rem 0.6rem;
+        align-items: flex-start;
+    }
+
+    .ContainerTexto, .ContainerTextoGrande, .ContainerTitulo, .ContainerImagem {
+        width: 100%;
+    }
+
+    .ContainerTexto {
+        max-height: none;
+        padding: 0.9rem;
+    }
+
+    .ContainerTitulo {
+        font-size: 1.4rem;
+    }
+
+    .letracursiva {
+        font-size: 2rem;
+    }
+
+    .um {
+        padding-top: 80px;
+    }
+
+    .imagem {
+        background-attachment: scroll;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teexto a, .ContainerTexto h3, .ContainerTexto h1 {
+        font-size: 0.85rem;
+    }
+
+    .photo-container {
+        width: 100%;
+    }
+}
